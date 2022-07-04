@@ -1,15 +1,11 @@
-﻿void Elements()
+﻿int ar_len = 8;
+int Elements()
 {
-    int i = 1;
-    int a = 0;
-    int array = Convert.ToInt32(8);
-    Console.Write("[");
-    while (i < array)
+    int[] array = new int[ar_len];
+    for (int i = 0; i < array.Length; i++)
     {
-        a = new Random().Next(-1000, 1000);
-        Console.Write(a + ", ");
-        i++;
+        array[i] = new Random().Next(-1000, 1000);
     }
-    Console.Write(a + "]");
+    return array;
 }
-Elements();
+
