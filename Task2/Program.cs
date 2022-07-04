@@ -5,7 +5,7 @@
     for(int i = 0; i < c; i++)
     {
         array[i] = new Random().Next(-1000, 1000);
-        Console.Write(array[i] + ", ");
+        Console.Write(array[i] + " ");
     }
 }
 Elements();
