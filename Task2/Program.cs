@@ -1,11 +1,11 @@
-﻿int ar_len = 8;
-int Elements()
+﻿void Elements()
 {
-    int[] array = new int[ar_len];
-    for (int i = 0; i < array.Length; i++)
+    int c = 8;
+    int[] array = new int[c];
+    for(int i = 0; i < c; i++)
     {
         array[i] = new Random().Next(-1000, 1000);
+        Console.Write(array[i] + ", ");
     }
-    return array;
 }
-
+Elements();
